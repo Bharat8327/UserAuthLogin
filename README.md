@@ -55,29 +55,23 @@ npm run dev
 Step 4️⃣: Set Up the Frontend
 cd client
 npm install
-
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![Home Page](../client/public/screenshots/homepgae.png)
+![Home Page](screenshots/homepage.png)
 
 ### 🔐 Login Page
-![Login Screenshot](../client/public/screenshots/loginpage.png)
+![Login Screenshot](screenshots/loginpage.png)
 
 ### ✅ Login Success Homepage
-![Login Homepage](../client/public/screenshots/loginhomepage.png)
+![Login Homepage](screenshots/loginhomepage.png)
 
 ### ✉️ OTP Sent
-![Otp Sent](../client/public/screenshots/otpSent.png)
+![Otp Sent](screenshots/otpSent.png)
 
 ### 🔁 Reset Password
-![Reset Password](../client/public/screenshots/resetpassword.png)
+![Reset Password](screenshots/resetpassword.png)
 
 ### 📧 Verify Email
-![Verify Email](../client/public/screenshots/verifyemail.png)
-
-
-
-
-
+![Verify Email](screenshots/verifyemail.png)
 ```
