@@ -1,6 +1,7 @@
 # 🔐 MERN Authentication System
 
 A complete **MERN Stack Authentication System** with:
+
 - ✅ Email OTP Verification
 - 🔁 Password Reset
 - 🔑 JWT-based Authentication
@@ -31,6 +32,7 @@ A complete **MERN Stack Authentication System** with:
 ## 📦 Installation
 
 ### 1. Clone the repository
+
 ```bash
 git clone https://github.com/Bharat8327/UserAuthLogin.git
 cd MernAuth
@@ -57,24 +59,25 @@ npm install
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![Home Page](client/public/screenshots/homepage.png)
+![Home Page](../client/public/screenshots/homepgae.png)
 
 ### 🔐 Login Page
-![Login Screenshot](client/public/screenshots/loginpage.png)
+![Login Screenshot](../client/public/screenshots/loginpage.png)
 
 ### ✅ Login Success Homepage
-![Login Homepage](client/public/screenshots/loginhomepage.png)
+![Login Homepage](../client/public/screenshots/loginhomepage.png)
 
 ### ✉️ OTP Sent
-![Otp Sent](client/public/screenshots/otpSent.png)
+![Otp Sent](../client/public/screenshots/otpSent.png)
 
 ### 🔁 Reset Password
-![Reset Password](client/public/screenshots/resetpassword.png)
+![Reset Password](../client/public/screenshots/resetpassword.png)
 
 ### 📧 Verify Email
-![Verify Email](client/public/screenshots/verifyemail.png)
+![Verify Email](../client/public/screenshots/verifyemail.png)
 
 
 
 
 
+```
