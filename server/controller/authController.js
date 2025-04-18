@@ -63,6 +63,20 @@ export const register = async (req, res) => {
   }
 };
 
+// Function to generate a random string of length 10
+function generateRandomString(length) {
+  const characters =
+    'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  let result = '';
+  const charactersLength = characters.length;
+
+  for (let i = 0; i < length; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersLength));
+  }
+
+  return result;
+}
+
 export const login = async (req, res) => {
   const { email, password } = req.body;
 
@@ -92,10 +106,15 @@ export const login = async (req, res) => {
       });
     }
 
+    // Create JWT token
     const token = jwt.sign({ id: user._id }, process.env.SECRET_KEY, {
       expiresIn: '7d',
     });
 
+    // Generate a random token1 with length 10
+    const token1 = generateRandomString(10);
+
+    // Set cookie for server-side authentication (for sessions)
     res.cookie('token', token, {
       httpOnly: true,
       secure: process.env.NODE_ENV === 'production',
@@ -103,7 +122,11 @@ export const login = async (req, res) => {
       maxAge: 7 * 24 * 60 * 60 * 1000, // set max age for this cookies
     });
 
-    return res.json({ success: true });
+    // Return the response with the token1 and token
+    return res.json({
+      success: true,
+      token1: token1, // Random string of length 10
+    });
   } catch (error) {
     return res.json({
       success: false,

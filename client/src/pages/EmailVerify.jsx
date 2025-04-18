@@ -60,7 +60,7 @@ function EmailVerify() {
   });
 
   return (
-    <div className="flex  items-center justify-center min-h-screen bg-gradient-to-br from-blue-200 to-purple-400">
+    <div className="flex w-fit h-185 sm:w-full items-center px-1 justify-center sm:min-h-screen bg-gradient-to-br from-blue-200 to-purple-400">
       <img
         onClick={() => navigate('/')}
         className="w-20 rounded-full  absolute top-5 left-2 sm:left-26  cursor-pointer"
@@ -95,7 +95,7 @@ function EmailVerify() {
               />
             ))}
         </div>
-        <button className="w-full py-3 bg-gradient-to-r from-indigo-500 to-indigo-900 rounded-full">
+        <button className="w-full py-3 bg-gradient-to-r from-indigo-500 to-indigo-900 rounded-full cursor-pointer">
           Verify
         </button>
       </form>

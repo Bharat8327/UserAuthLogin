@@ -20,8 +20,8 @@ function ResetPassword() {
   } = useContext(AppContent);
   axios.defaults.withCredentials = true;
   const navigate = useNavigate();
-  const [email, setEmail] = useState();
-  const [password, setPassword] = useState();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState('password');
   const [isEmailSent, setIsEmailSent] = useState('');
   const [otp, setOtp] = useState(0);
@@ -49,7 +49,9 @@ function ResetPassword() {
         inputRef.current[index].value = char;
       }
     });
-    inputRef.current[inputRef.length - 1].focus();
+    if (inputRef.current[inputRef.current.length - 1]) {
+      inputRef.current[inputRef.current.length - 1].focus();
+    }
   };
 
   const handlePasswordView = () => {
@@ -204,7 +206,7 @@ function ResetPassword() {
               />
             ) : (
               <SlEye
-                className="w-6a h-6 cursor-pointer"
+                className="w-6 h-6 cursor-pointer"
                 onClick={handlePasswordView}
               />
             )}
