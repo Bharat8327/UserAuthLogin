@@ -1,12 +1,64 @@
-# React + Vite
+# 🔐 MERN Authentication System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A complete **MERN Stack Authentication System** with secure OTP email verification, password reset, and JWT-based login—all built with a modern UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+✅ Email OTP Verification  
+🔁 Password Reset  
+🔑 JWT Authentication  
+📩 Email via Nodemailer  
+🍞 Toast Notifications (React-Toastify)  
+🌟 React Icons UI  
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📸 Screenshots
+
+| Homepage | Login Page | Reset-OTP-Sent |
+|---------|------------|----------------|
+| ![](public/screenshots/homepgae.png) | ![](public/screenshots/loginpage.png) | ![](public/screenshots/otpSent.png) |
+
+| Reset Password | Email Verification | Login-After-View |
+|----------------|---------------------|---------------------|
+| ![](public/screenshots/resetpassword.png) | ![](public/screenshots/verifyemail.png) | ![](public/screenshots/loginhomepage.png) |
+
+---
+
+## 🧩 Core Functionalities
+
+- 📝 **User Signup with Email OTP**
+- 🔐 **Secure Login with JWT**
+- ✉️ **Email-based Password Reset**
+- 🚫 **Protected Routes (Frontend + Backend)**
+- 📢 **Toast Alerts for Feedback**
+- 💅 **Modern, Interactive UI with React Icons**
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend:**  
+- React  
+- React Router DOM  
+- Axios  
+- React Toastify  
+- React Icons  
+
+**Backend:**  
+- Node.js + Express.js  
+- MongoDB + Mongoose  
+- Nodemailer  
+- JSON Web Tokens (JWT)
+
+---
+
+## 📦 Installation & Setup
+
+### Step 1️⃣: Clone the Repository
+
+```bash
+git clone https://github.com/Bharat8327/UserAuthLogin.git
+cd MernAuth
